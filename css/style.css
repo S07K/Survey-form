@@ -1,0 +1,100 @@
+
+		body
+		{	
+			background: url(https://images.unsplash.com/32/Mc8kW4x9Q3aRR3RkP5Im_IMG_4417.jpg?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1500&q=80);
+			color: white;
+			font-size: 30px;
+			font-family: 'East Sea Dokdo', cursive;
+		}
+		.container
+		{
+			margin: 10px 200px 10px 200px;
+			max-width: 100%
+			height:auto;
+			padding: 50px;
+			background : rgba(0,0,0,0.7);
+			border-radius: 5px;
+			box-shadow: 0 10px 20px 0 rgba(0,0,0,0.9);
+		}
+		#title, #description
+		{
+			text-align: center;
+		}
+		[type = 'radio']
+		{
+			transform: scale(1.5);
+			margin: 10px ;
+		}
+		[type = 'checkbox']
+		{
+			transform: scale(1.5);
+			margin: 10px ;
+		}
+		#name, #email, #number, #dropdown
+		{
+			width: 100%;
+			height: 30px;
+			border-radius: 3px; 
+			font-size: 20px;
+			border-color: skyblue !important;
+			margin-bottom: 10px;
+		}
+		@media (max-width: 1000px)
+		{
+			.container
+			{
+				margin: 2px !important;
+			}
+			#title
+			{
+				font-size: 35px;
+			}
+		}
+		#name-label
+		{
+			margin-bottom: 5px; 
+		}
+		option
+		{
+			font-family: inherit;
+		}
+		fieldset
+		{
+			border-radius: 10px;
+		}
+		::placeholder
+		{
+			opacity: 0.5;
+			padding: 7px 5px 7px 5px;
+			font-size: 25px;
+			font-family: 'East Sea Dokdo', cursive;
+		}
+		textarea
+		{
+			min-width: 100%;
+			height: 100px;
+			padding: 5px;
+			border-radius: 5px;
+			font-size: inherit;
+		}
+		.f
+		{
+			margin: 50px 0 50px 0;
+		}
+		button
+		{
+			min-width: 100%;
+			height: 50px;
+			background-color: #37af65;
+			opacity: 0.5;
+			border-color: #37af65;
+			border-radius: 10px;
+			box-shadow: 0 5px 10px 0 rgba(0,0,0,0.5);
+			color: white;
+			font-family: inherit;
+			font-size: inherit;
+		}
+		button:hover
+		{
+			opacity: 1;
+		}
