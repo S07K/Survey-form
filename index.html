@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Survey Form</title>
+	<link href="https://fonts.googleapis.com/css2?family=East+Sea+Dokdo&display=swap" rel="stylesheet">
+
+</head>
+<body>
+	<div>
+		<h1 id="title">College Students Survey Form</h1>
+	</div>
+	<div>
+		<p id= "description">pls fill the form correctly.</p>
+	</div>
+	<div class="container">
+		<form id="survey-form" action="#">
+			
+			<div class="f">
+				<label for="name" id="name-label">Name Of Student</label><br>
+					<input type="text" name="" id="name" placeholder="Full Name" required="">
+			</div>
+
+			<div class="f">
+				<!-- User Story #6: If I enter an email that is not formatted correctly, I will see an HTML5 validation error. -->
+				<label for="email" id="email-label">Email Id</label><br>
+					<input type="email" name="" id="email" placeholder="username@email.com" required>
+			</div>
+
+			<div class="f">
+				<!-- //User story #8: If I enter non-numbers in the number input, I will see an HTML5 validation error. -->
+				<label for="number" id="number-label">Age</label><br>
+					<input type="number" name="" id="number" min="18" max="60" placeholder="above 18" required>
+			</div>
+
+			<div class="f">
+				<label for="dropdown">Year of College</label><br>
+				<select id="dropdown" name="Year">
+					<option value="disabled" disabled selected><-----select an option-----></option>
+					<option value="1">1st Year</option>
+					<option value="2">2nd Year</option>
+					<option value="3">3rd Year</option>
+				</select>
+			</div>
+
+			<!-- User Story #13: Inside the form element, I can select a field from one or more groups of radio buttons. Each group should be grouped using the name attribute. -->
+
+			<div class="f">
+				
+				<fieldset id="gender">
+					<legend for="gender">Gender</legend>
+					<label for="Male">
+						<input type="radio" id="Male" name="Gender" value="Male" checked>Male<br>
+					</label>
+					<label for="Female">
+						<input type="radio" id="Female" name="Gender" value="Female">Female<br>
+					</label>
+					<label for="Others">
+						<input type="radio" id="Others" name="Gender" value="Others">Others<br>
+					</label>
+				</fieldset>
+			</div>
+
+			<!-- Inside the form element, I can select several fields from a series of checkboxes, each of which must have a value attribute. -->
+
+			<div class="f">	
+				<fieldset id="skills">
+					<legend for="skills">Skills</legend>
+					<label for="">		
+						<input type="checkbox" name="" value="c++">C++<br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="" value="java">Java<br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="" value="python">Python<br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="" value="HTML">HTML<br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="" value="CSS">CSS<br>
+					</label>
+					<label for="">
+						<input type="checkbox" name="" value="JavaScript">JavaScript<br>
+					</label>
+				</fieldset>
+			</div>
+
+			<div class="f">
+				<label for="text-area">Any comments or suggestions?</label>
+				<textarea id="text-area" placeholder="Comment Here..."></textarea>
+			</div>
+			
+			<div class="f">
+				<button type="submit" id="submit">Submit</button>	
+			</div>
+			
+		</form>
+	</div>
+</body>
+<!----<script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>----->
+</html>
